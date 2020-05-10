@@ -45,7 +45,7 @@ function display() {
 	console.log("License: GNU GPL3");
 	console.log("\nRun this function to check all balances: checkAllBalances()");
 	console.log("Run this function to check IPTM balances: checkIPTMBalances()");
-	console.log("Run this function to check IPTM balances: checkLocalBalances()");
+	console.log("Run this function to check Local balances: checkLocalBalances()");
 }
 
 display();
