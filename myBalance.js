@@ -8,8 +8,8 @@ function checkIPTMBalances() {
 	
 	console.log("\n  #### IPTM Secretariat Accounts #### ");
 	
-	console.log("  Root      Account, " + rootAcc + ": " + web3.fromWei(eth.getBalance(rootAcc), "ether") + " ether");
-	console.log("  Default   Account, " + defaultAcc + ": "+ web3.fromWei(eth.getBalance(defaultAcc), "ether") + " ether");
+	console.log("  Root    Account, " + rootAcc + ": " + web3.fromWei(eth.getBalance(rootAcc), "ether") + " ether");
+	console.log("  Default Account, " + defaultAcc + ": "+ web3.fromWei(eth.getBalance(defaultAcc), "ether") + " ether");
 	
 	var totalBal = 0;
 	for (var i in sealer_Acc) {
@@ -29,7 +29,7 @@ function checkLocalBalances() {
         var acct = eth.accounts[acctNum];
         var acctBal = web3.fromWei(eth.getBalance(acct), "ether");
         totalBal += parseFloat(acctBal);
-        console.log("  eth.accounts[" + acctNum + "]: \t" + acct + " \tbalance: " + acctBal + " ether");
+        console.log("  eth.accounts[" + acctNum + "]: " + acct + " balance: " + acctBal + " ether");
     }
     console.log("  Total Balance: " + totalBal + " ether");
 };
